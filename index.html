@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Travle Blog</title>
+    <style>
+        li{
+            color: black;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        .navbar{
+            background-color: rgb(255, 157, 0);
+            color: black;
+        }
+        .blog{
+          display: flex;
+        }
+        .blog{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            padding:12px 14px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap: 20px;
+            margin-top: 50px;
+          }
+        .content{
+          padding-left: 20px;
+          padding-right: 20px;
+          align-items: center;
+          justify-content: center;
+          background-color: aqua;
+          color: darksalmon;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+        .blog img{
+          width:500px;
+          height:270px;
+          border-radius: 10px;
+        }
+        .blog input{
+          width:100%;
+          height:40px;
+          background-color: blanchedalmond;
+          border-radius: 10px;
+          font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Travel Blog</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Destination.html">Destination</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contactme.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="blog">
+        <div class="container">
+          <div class="blog">
+            <img src="Goa.jpg" alt="img">
+            <div class="content">
+              <h3>Goa</h3>
+              <h3>28-10-2020</h3>
+              <p>Goa is an ideal place for water sports and fun lovers. 
+                It offers ample opportunities to adventure enthusiasts to enjoy in water in various ways</p>
+                <br>
+                <input type="text" placeholder="Comment" >
+            </div>
+          </div>
+          
+          <div class="blog">
+            <img src="vizag.jpeg" alt="img">
+            <div class="content">
+              <h3>Vizag</h3>
+              <h3>22-1-2021</h3>
+              <p>Ramakrishna Beach also known as R K Beach is situated on the east coast of Bay of Bengal in Visakhapatnam, Andhra Pradesh.</p>
+                <br>
+                <input type="text" placeholder="Comment" >
+            </div>
+          </div>
+
+          <div class="blog">
+            <img src="kerala.jpg" alt="img">
+            <div class="content">
+              <h3>Kochi</h3>
+              <h3>08-3-2023</h3>
+              <p>Kochi is the central port city in Kerala. Regarded to be the “Queen of Arabian Sea,” 
+                Cochin is located on the south-west coast of India,</p>
+                <br>
+                <input type="text" placeholder="Comment" >
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
